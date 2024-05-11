@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
 
-class TextTitle extends StatelessWidget {
+class TextTitle extends StatelessWidget{
 
   final String title;
   final Color? color;
 
-  const TextTitle({super.key, required this.title, this.color});
+  const TextTitle({super.key,required this.title,this.color});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return Text(
       title,
-      style: TextStyle(
-        fontFamily: 'Montserrat',
-        color: color ?? const Color(0xFF222222),
+      style:  TextStyle(
+        color: color ?? Color.fromARGB(255, 13, 0, 154),
         fontSize: 24,
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w600,
+        fontFamily: 'SedanSC'
       ),
+      
     );
   }
 

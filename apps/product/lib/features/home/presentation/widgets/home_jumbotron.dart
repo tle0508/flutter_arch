@@ -1,6 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:core_ui/widgets/elements/buttons/primary_button.dart';
 import 'package:core_ui/widgets/elements/texts/big_text.dart';
+import 'package:flutter/material.dart';
+
+
 
 class HomeJumbotron extends StatelessWidget {
   final String imageUrl;
@@ -9,6 +11,8 @@ class HomeJumbotron extends StatelessWidget {
 
   const HomeJumbotron({super.key, required this.imageUrl, required this.title, required this.buttonTitle});
 
+  
+  
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -31,7 +35,7 @@ class HomeJumbotron extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     BigText(title: title),
-                    PrimaryButton(title: buttonTitle, onPress: (){print(title);},)
+                    PrimaryButton(title: buttonTitle, onPress: () {  },)
                   ],
                 ),
               ),

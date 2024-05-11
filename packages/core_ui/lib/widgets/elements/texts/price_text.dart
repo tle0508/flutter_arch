@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 class PriceText extends StatelessWidget {
@@ -11,10 +12,10 @@ class PriceText extends StatelessWidget {
     return Text(
       price,
       style: TextStyle(
-        fontFamily: 'Oswald',
-        color: color ?? Colors.white,
-        fontSize: 16,
+        color: color ?? Color.fromARGB(255, 11, 96, 0),
+        fontSize: 18,
         fontWeight: FontWeight.w800,
+        fontFamily: 'SedanSC'
       ),
     );
   }
