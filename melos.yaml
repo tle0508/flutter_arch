@@ -7,3 +7,5 @@ ide:
 packages:
   - apps/**
   - packages/**
+
+  

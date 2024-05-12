@@ -8,6 +8,7 @@ class Loading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+ 
     return const Center(
         child: SizedBox(
             width: 200,
@@ -15,9 +16,9 @@ class Loading extends StatelessWidget {
             child: LoadingIndicator(
               indicatorType: Indicator.pacman,
               colors: [
-                Color.fromARGB(255, 17, 0, 166),
-                 Color.fromARGB(255, 0, 0, 0),
-                  Color.fromARGB(255, 0, 13, 100),
+                Color.fromARGB(255, 158, 0, 166),
+                 Color.fromARGB(255, 255, 0, 251),
+                  Color.fromARGB(255, 165, 0, 113),
               ],
             )
         )

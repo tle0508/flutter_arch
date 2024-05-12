@@ -1,12 +1,13 @@
 import 'package:core/dependency_injection/inject.dart';
 import 'package:core/router/router.dart';
 import 'package:flutter/material.dart';
-import 'package:product/main.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 
 void main() {
   registerServices();
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -20,4 +21,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

@@ -17,12 +17,27 @@ dependencies:
     path: ../../packages/core_libs
   product:
     path: ../product
+  user:
+    path: ../user
   go_router: ^14.1.0
+  flutter_riverpod: ^2.5.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  riverpod_lint: ^2.3.10
 
 flutter:
+
   uses-material-design: true
+  fonts:
+    - family : SedanSC
+      fonts:
+        - asset: assets/fonts/SedanSC-Regular.ttf
+          weight : 300
+
+    - family : Jacquard24
+      fonts:
+        - asset: assets/fonts/Jacquard24-Regular.ttf
+          weight : 100
